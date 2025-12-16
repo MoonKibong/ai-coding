@@ -1,0 +1,37 @@
+---
+name: CLAUDE.md.example
+date: 2025-12-17
+---
+# MyNewApp - AI Assistant Context
+
+> **⚠️ MAINTENANCE**: Keep under **20KB** (~400 lines). 
+> Move details to `docs/patterns/`. 
+> Prioritize: security > patterns > structure.
+
+## Project
+| Component | Path | Stack |
+|-----------|------|-------|
+| Frontend | `/src/client` | React 19 + TS + Tailwind |
+| Backend | `/src/server` | Node + Express + TS |
+
+---
+
+## CRITICAL: Security Rules
+- **Auth:** Never store tokens in localStorage (XSS risk). Use HTTP-only cookies.
+- **Validation:** All inputs must be validated with Zod before processing.
+
+---
+
+## Architecture
+- **Features:** `src/features/{name}/` (Contains api/, components/, hooks/).
+- **Shared:** `src/components/` (Only for truly generic UI elements).
+
+---
+
+## Core Patterns
+- **Data Fetching:** Use TanStack Query. See `docs/patterns/DATA_FETCHING.md`.
+- **Forms:** React Hook Form + Zod. See `docs/patterns/FORMS.md`.
+
+---
+
+**Version**: 0.1 | **Updated**: 2025-12-17
