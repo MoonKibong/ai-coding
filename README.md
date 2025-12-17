@@ -69,9 +69,14 @@ Output: Provide the docker-compose.yml content and a list of bash commands to ex
 - Setup development environment as instructed in `SETUP_COMMANDS.md`
 
 **IMPORTANT**
-> If there's any problem running the commands, ask AI to fix it. E.g.,
+> If there's any problem running the commands, ask AI to fix it.
+> For example, there could be docker version issue. The generated setup commands follow old version:
 ```
 I found that in my environment, `docker-compose` is invalid command. Instead `docker compose` should be used. and I found the auto generated ~/.docker/config.json has typo: credsStore should be fixed to credStore. Update these to relevant documents.
+```
+> There could be python version issue as well. E.g.,:
+```
+I found my python version is 3.9.7 but poetry requires 3.11+. Update documents on version related problem detection and solution in SETUP_COMMANDS.md
 ```
 
 ## Step 3. Generate initial code using only the basic context
