@@ -132,3 +132,7 @@ alembic downgrade -1
 - Backend uses Loguru for all logging
 - Three logging targets: console (development), file (persistent), OS-level (system integration)
 - Frontend errors should be logged and optionally sent to backend for tracking
+
+## Features & Patterns
+- **Active Feature**: Disease Risk Analysis. See `docs/features/DISEASE_RISK_ANALYSIS.md` for logic and data contracts.
+- **Core Pattern**: AI Service Layer. See `docs/patterns/AI_INFERENCE_SERVICE.md`. **ALL** prediction logic must follow this pattern.

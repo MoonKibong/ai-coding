@@ -1,0 +1,23 @@
+[project]
+name = "medipredict-backend"
+version = "0.1.0"
+description = "MediPredict Lite Backend API"
+authors = [
+    {name = "Your Name",email = "your.email@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "fastapi (>=0.124.4,<0.125.0)",
+    "uvicorn[standard] (>=0.38.0,<0.39.0)",
+    "sqlalchemy (>=2.0.45,<3.0.0)",
+    "aiomysql (>=0.3.2,<0.4.0)",
+    "redis (>=7.1.0,<8.0.0)",
+    "loguru (>=0.7.3,<0.8.0)",
+    "pydantic-settings (>=2.12.0,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

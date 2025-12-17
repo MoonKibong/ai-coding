@@ -6,7 +6,11 @@ Demonstrate step-by-step procedure of using ai agent from the scratch.
 
 ## Step 1. Write the root context file
 
+- Create workspace & run claude
+
 ```sh
+mkdir medi-predict-lite
+cd mdedi-predict-lite
 claude
 ```
 
@@ -19,13 +23,15 @@ Stack:
 ```
 
 **Create symbolic links for other agents**
+
+E.g.:
 ```sh
 ln CLAUDE.md .cursorrules
 ```
 
 ## Step 2. 
 
-Ask AI to:
+- Ask AI to:
 ```
 Act as a DevOps & System Architect.
 
@@ -58,6 +64,14 @@ Initialize the Backend (/server) using poetry init (or pip).
 Install Backend Deps: fastapi, uvicorn, sqlalchemy, aiomysql (async driver), redis, loguru, pydantic-settings.
 
 Output: Provide the docker-compose.yml content and a list of bash commands to execute.
+```
+
+- Setup development environment as instructed in `SETUP_COMMANDS.md`
+
+**IMPORTANT**
+> If there's any problem running the commands, ask AI to fix it. E.g.,
+```
+I found that in my environment, `docker-compose` is invalid command. Instead `docker compose` should be used. and I found the auto generated ~/.docker/config.json has typo: credsStore should be fixed to credStore. Update these to relevant documents.
 ```
 
 ## Step 3. Generate initial code using only the basic context
