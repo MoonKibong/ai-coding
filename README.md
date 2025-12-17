@@ -64,7 +64,8 @@ Output: Provide the docker-compose.yml content and a list of bash commands to ex
 
 Ask AI to:
 ```
-Create a backend endpoint to predict disease risk that uses a Python mock engine and returns a result.```
+Create a backend endpoint to predict disease risk that uses a Python mock engine and returns a result.
+```
 
 ## Step 4. Add feature and pattern docs
 
