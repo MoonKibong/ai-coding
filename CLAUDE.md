@@ -136,3 +136,9 @@ alembic downgrade -1
 ## Features & Patterns
 - **Active Feature**: Disease Risk Analysis. See `docs/features/DISEASE_RISK_ANALYSIS.md` for logic and data contracts.
 - **Core Pattern**: AI Service Layer. See `docs/patterns/AI_INFERENCE_SERVICE.md`. **ALL** prediction logic must follow this pattern.
+
+## Documentation & Standards
+> **📖 Source of Truth**: See `docs/README.md` for detailed:
+> - Folder Structure & Naming Conventions
+> - Development Workflow
+> - Tech Stack Details

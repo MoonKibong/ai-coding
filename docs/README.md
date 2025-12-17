@@ -13,11 +13,6 @@ This document explains the MediPredict Lite project structure, naming convention
 
 ```
 ai-coding/
-├── __DO_NOT_READ_OR_UPDATE__/    # Reference documentation (do not modify)
-│   ├── AI_INFERENCE_SERVICE.md    # Pattern reference for AI service layer
-│   ├── DISEASE_RISK_ANALYSIS.md   # Feature reference for disease risk analysis
-│   └── CLAUDE.md.example          # Example context file
-│
 ├── client/                        # Frontend application (Vue 3)
 │   ├── src/
 │   │   ├── components/           # Vue components
@@ -51,7 +46,6 @@ ai-coding/
 - **`client/`**: Frontend Vue 3 application with TypeScript, Vuetify, and Chart.js
 - **`server/`**: Backend FastAPI application with SQLAlchemy, MySQL, and Redis
 - **`docs/`**: Project documentation including features and patterns
-- **`__DO_NOT_READ_OR_UPDATE__/`**: Reference documentation that should not be modified (used as context for AI agents)
 
 ## Naming Conventions
 
