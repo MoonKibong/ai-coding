@@ -60,6 +60,14 @@ Install Backend Deps: fastapi, uvicorn, sqlalchemy, aiomysql (async driver), red
 Output: Provide the docker-compose.yml content and a list of bash commands to execute.
 ```
 
+- Setup development environment as instructed in `SETUP_COMMANDS.md`
+
+**IMPORTANT**
+> If there's any problem running the commands, ask AI to fix it. E.g.,
+```
+I found that in my environment, `docker-compose` is invalid command. Instead `docker compose` should be used. and I found the auto generated ~/.docker/config.json has typo: credsStore should be fixed to credStore. Update these to relevant documents.
+```
+
 ## Step 3. Generate initial code using only the basic context
 
 Ask AI to:
