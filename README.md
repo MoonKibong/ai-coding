@@ -29,7 +29,7 @@ E.g.:
 ln CLAUDE.md .cursorrules
 ```
 
-## Step 2. 
+## Step 2. Project Setup
 
 - Ask AI to:
 ```
@@ -78,7 +78,8 @@ I found that in my environment, `docker-compose` is invalid command. Instead `do
 
 Ask AI to:
 ```
-Create a backend endpoint to predict disease risk that uses a Python mock engine and returns a result.```
+Create a backend endpoint to predict disease risk that uses a Python mock engine and returns a result.
+```
 
 ## Step 4. Add feature and pattern docs
 
