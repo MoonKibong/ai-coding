@@ -101,3 +101,4 @@ Ask AI to:
 ```
 Based on the project setup we just created, generate a docs/README.md that explains our folder structure, naming conventions, and tech stack choices.
 ```
+The generated document will serve as a project rules and standard document.
