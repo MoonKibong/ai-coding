@@ -6,7 +6,11 @@ Demonstrate step-by-step procedure of using ai agent from the scratch.
 
 ## Step 1. Write the root context file
 
+- Create workspace & run claude
+
 ```sh
+mkdir medi-predict-lite
+cd mdedi-predict-lite
 claude
 ```
 
@@ -19,13 +23,15 @@ Stack:
 ```
 
 **Create symbolic links for other agents**
+
+E.g.:
 ```sh
 ln CLAUDE.md .cursorrules
 ```
 
 ## Step 2. Project Setup
 
-Ask AI to:
+- Ask AI to:
 ```
 Act as a DevOps & System Architect.
 
@@ -102,3 +108,38 @@ Based on the project setup we just created, generate a docs/README.md that expla
 ```
 
 The generated document will serve as a project rules and standard document.
+
+## Step 6. Review the rule file
+
+- Read newly generated `docs/README.md`
+- Modify the content to fit your actual choices or modify the prompt of step 5 to modify the file
+
+## Step 7. Link context to the project rule
+
+- Add the following lines to `CLAUDE.md`:
+```
+## Documentation & Standards
+> **📖 Source of Truth**: See `docs/README.md` for detailed:
+> - Folder Structure & Naming Conventions
+> - Development Workflow
+> - Tech Stack Details
+```
+## Step 8. Start Implementation
+
+Ask AI to:
+```
+Act as a Senior Full-Stack Developer.
+
+**Task**: Implement the `Active Feature` defined in `CLAUDE.md`.
+
+**Instructions**:
+1. **Context**: Review the linked **Feature Doc** and **Pattern Doc** in `CLAUDE.md` for strict logic and architecture requirements.
+2. **Standards**: Ensure all code strictly follows the folder structure and naming conventions defined in our Project Documentation.
+
+**Deliverables**:
+- Backend: Pydantic Schemas, Service Layer, Router.
+- Frontend: Composable, Vue Component.
+
+**Output**:
+Generate the code and the `main.py` router registration.
+```
